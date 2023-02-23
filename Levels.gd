@@ -15,7 +15,9 @@ var levels = [
 			,[50,50,50,50,50,50,50,50]
 			,[40,40,40,40,40,40,40,40]
 			,[30,30,30,30,30,30,30,30]
-		]
+		],
+		"music":load("res://Assets/Central City.ogg"),
+		"background":load("res://Assets/backgroundEmpty.png")
 	}
 	,{
 		"name":"Level 2",
@@ -31,7 +33,9 @@ var levels = [
 			,[100,50,50,100,100,50,50,100]
 			,[100,40,40,40,40,40,40,100]
 			,[0,100,100,100,100,100,100,0]
-		]
+		],
+		"music":load("res://Assets/Game Over.ogg"),
+		"background":load("res://Assets/backgroundForest.png")
 	}
 	,{
 		"name":"Bonus Round",
@@ -47,6 +51,9 @@ var levels = [
 			,[100,100,100,100,100,100,100,100]
 			,[100,100,100,100,100,100,100,100]
 			,[100,100,100,100,100,100,100,100]
-		]
+		],
+		"music":load("res://Assets/Game Over.ogg"),
+		"background":load("res://Assets/backgroundDesert.png")
+
 	}
 ]
