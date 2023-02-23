@@ -9,6 +9,8 @@ var fever = 0
 var fever_multiplier = 0.15
 var starting_in = 0
 
+var brick_hue = 0
+
 var fever_decay = 0.1
 var feverish = false
 
