@@ -13,10 +13,18 @@ func _ready():
 		var Brick_Container = get_node_or_null("/root/Game/Brick_Container")
 		Global.time = level["timer"]
 		if Brick_Container != null:
-			var Brick = load("res://Brick/Brick.tscn")
+			var Bricks = [
+				load("res://Brick/Polygon_Yellow.tscn")
+				,load("res://Brick/Rectangle_Red.tscn")
+			]
+			var Brick = null
 			for rows in range(len(layout)):
 				for cols in range(len(layout[rows])):
 					if layout[rows][cols] > 0:
+						if layout[rows][cols] > 50:
+							Brick = 	Bricks[0]
+						else:
+							Brick = 	Bricks[1]
 						var brick = Brick.instance()
 						brick.new_position = Vector2(margin.x + index.x*cols, margin.y + index.y*rows)
 						brick.position = Vector2(brick.new_position.x,-100)
